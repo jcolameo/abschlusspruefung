@@ -1,0 +1,44 @@
+<!--
+***************************************
+* Aufgabe: Formular registrieren.html
+* Autor: Jeremy Colameo 
+* Klasse: IT1b
+* Datum: 13.05.2020
+***************************************
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>registrieren</title>
+</head>
+
+<body>
+    <h1>registrieren sie sich bitte</h1>
+
+    <form action="registrieren.php" method="POST">
+        <p>Privat oder Firma?:
+            <input type="checkbox" name="wahl" value="Privat">Privat
+            <input type="checkbox" name="wahl" value="Firma">Firma
+        </p>
+
+        <p>Vorname: <input type="Text" name="Vorname"></p>
+        <p>Nachname: <input type="Text" name="Nachname"></p>
+        <label>email:
+            <input type="email" name="Email">
+        </label>
+        <p><label>Telefonnummer:
+                <input type="tel" name="Telefon">
+            </label>
+        </p>
+        <p>AGB's Akzeptieren: 
+            <input type="radio" name="AGB"> Akzeptieren
+        </p>
+        <p><input type="submit" value="Abschicken">
+        <input type="reset" value="zurücksetzen">
+        </p>
+    </form>
+</body>
+
+</html>
